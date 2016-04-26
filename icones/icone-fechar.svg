@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="prototipo-bpvc-controle-de-vendasV3.fw-Fechar%20Oportunidade" viewBox="0 0 1366 768" style="background-color:#ffffff" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="1366px" height="768px"
+>
+	<defs>
+		<!-- Library -->
+		<symbol id="Symbol34" overflow="visible">
+			<g id="Layer%201">
+				<g id="007__close">
+					<path d="M 4.55 5.95 C 4.45 5.95 4.25 5.95 4.15 5.85 L -5.85 -4.15 C -6.05 -4.35 -6.05 -4.65 -5.85 -4.85 C -5.65 -5.05 -5.35 -5.05 -5.15 -4.85 L 4.85 5.15 C 5.05 5.35 5.05 5.65 4.85 5.85 C 4.85 5.95 4.65 5.95 4.55 5.95 L 4.55 5.95 Z" fill="#003e7e"/>
+					<path d="M -5.45 5.95 C -5.55 5.95 -5.75 5.95 -5.85 5.85 C -6.05 5.65 -6.05 5.35 -5.85 5.15 L 4.15 -4.85 C 4.35 -5.05 4.65 -5.05 4.85 -4.85 C 5.05 -4.65 5.05 -4.35 4.85 -4.15 L -5.15 5.85 C -5.15 5.95 -5.35 5.95 -5.45 5.95 L -5.45 5.95 Z" fill="#003e7e"/>
+				</g>
+			</g>
+			<g id="Web%20Layer">
+			</g>
+
+		</symbol>
+		<!-- End Library -->
+
+	</defs>
+	<use xlink:href="#Symbol34" transform="matrix(1, 0, 0, 1, 948, 146)"/>
+</svg>

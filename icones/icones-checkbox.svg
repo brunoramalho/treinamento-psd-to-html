@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="prototipo-bpvc-controle-de-vendasV3.fw-Permiss%F5es" viewBox="0 0 1366 836" style="background-color:#ffffff" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="1366px" height="836px"
+>
+	<defs>
+		<radialGradient id="gradient1" cx="45.8333%" cy="45.8333%" r="45.8333%">
+			<stop stop-color="#ffffff" stop-opacity="1" offset="0%"/>
+			<stop stop-color="#ffffff" stop-opacity="1" offset="54.4444%"/>
+			<stop stop-color="#eeeeee" stop-opacity="1" offset="100%"/>
+		</radialGradient>
+		<radialGradient id="gradient2" cx="45.8333%" cy="45.8333%" r="45.8333%">
+			<stop stop-color="#ffffff" stop-opacity="1" offset="0%"/>
+			<stop stop-color="#ffffff" stop-opacity="1" offset="54.4444%"/>
+			<stop stop-color="#eeeeee" stop-opacity="1" offset="100%"/>
+		</radialGradient>
+	</defs>
+	<rect x="412.5" y="189.5" width="12" height="12" stroke="#333333" stroke-width="1" fill="url(#gradient1)" rx="3" ry="3"/>
+	<rect x="412.5" y="231.5" width="12" height="12" stroke="#333333" stroke-width="1" fill="url(#gradient2)" rx="3" ry="3"/>
+	<path id="008__choose" d="M 418.65 199.15 C 417.95 199.15 417.35 198.85 416.85 198.45 L 414.15 195.75 C 413.95 195.55 413.95 195.25 414.15 195.05 C 414.35 194.85 414.65 194.85 414.85 195.05 L 417.55 197.75 C 417.85 198.05 418.25 198.15 418.65 198.15 L 418.65 198.15 C 419.05 198.15 419.45 197.95 419.75 197.75 L 426.15 191.15 C 426.35 190.95 426.65 190.95 426.85 191.15 C 427.05 191.35 427.05 191.65 426.85 191.85 L 420.45 198.45 C 420.05 198.85 419.35 199.15 418.65 199.15 L 418.65 199.15 L 418.65 199.15 Z" stroke="#00a8cb" stroke-width="1" fill="#00a8cb"/>
+	<rect opacity="0.502" x="412.5" y="319.5" width="12" height="12" stroke="#333333" stroke-width="1" fill="#c9c9c9" rx="3" ry="3"/>
+</svg>
