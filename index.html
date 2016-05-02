@@ -538,6 +538,294 @@ body {
 
 					<h2>Vamos praticar!</h2>
 				</section>
+
+				<!-- DIA 9 -->
+				<section>
+					<h3>Treinamento</h3>
+					<h2><a>Corte e Montagem <br>de HTML/CSS</a></h2>
+					<p>Do PSD ao HTML5</p>
+					<br>
+					<h3>Dia 9</h3>
+					<p>Photoshop, Fireworks, HTML5, Bootstrap</a>, <br>Fonticons, <a href="">CSS</a>, SASS, Gulp e Bower</p>
+				</section>
+				<section>
+					<h3><a href="">CSS</a></h3>
+					<br>
+
+					<p>Fazer um bom código front-end é <br> mais difícil do que parece.</p>
+					<br>
+
+					<p class="fragment fade"><a href="">Como ter um CSS mais reaproveitável?</a></p>
+				</section>
+				<section>
+					<section>
+						<h4><a href="">CSS</a></h4>
+
+						<h3>Boas Práticas</h3>
+						<br>
+
+						<ul>
+							<li class="fragment fade">Não sobrescreva suas próprias regras CSS</li>
+							<li class="fragment fade">Abuse de classes pra reaproveitar código CSS</li>
+							<li class="fragment fade">Não brigue com a especificidade do CSS</li>
+							<li class="fragment fade">Números mágicos são um mal sinal no CSS</li>
+							<li class="fragment fade">Use unidades flexíveis</li>
+							<li class="fragment fade">Evite acoplar o estilo CSS a tags específicas do HTML</li>
+							<li class="fragment fade">Dê bons nomes pra suas classes</li>
+							<li class="fragment fade">Documente bem as exceções</li>
+							<li class="fragment fade">Indentaçao do código</li>
+							<li class="fragment fade">Ordenação de propriedades</li>
+						</ul>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Não sobrescreva regras CSS</h3>
+						<br>
+
+						<p>Além de escrever a mesma propriedade <a href="">duas vezes</a>, <br>você não faz uso dos <a href="">padrões do navegador</a>.</p>
+						<br>
+
+						<p class="fragment fade"><a href="">Evite isso invertendo seus seletores <br>e os demais herdam o valor padrão.</a></p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Não sobrescreva regras CSS</h3>
+						<br>
+
+						<pre><code>
+/* desktop */
+.botao-magico { float: right; }
+
+/* mobile */
+@media (max-width: 600px) {
+	.botao-magico { float: none; }
+}
+						</code></pre>
+
+						<pre class="fragment fade"><code>
+/* mobile */
+/* nada aqui! o padrão é float:none */
+
+/* desktop */
+@media (min-width: 600px) {
+	.botao-magico { float: right; }
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Abuse de classes</h3>
+						<br>
+
+						<p>Classes nos permitem o tipo de reaproveitamento que a herança nos traz em linguagens orientadas a objetos</p>
+						<br>
+
+						<p class="fragment fade"><a href="">Crie uma hierarquia de classes para reaproveitar <br>estilos comuns mesmo em elementos diferentes</a></p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Abuse de classes</h3>
+						<br>
+
+						<p>Você tem dois elementos na página <em>.menu e .noticias</em> <br>que têm funções e visuais diferentes.</p>
+						<br>
+
+						<pre><code>
+&lt;div class="box menu">&lt;/div>
+&lt;div class="box noticias">&lt;/div>
+						</code></pre>
+						<pre><code>
+.box {
+	background: #ccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px black;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Não brigue com a especificidade</h3>
+						<br>
+
+						<p class="fragment">Seletor de ID tem precedência ao de classe, que tem precedência ao de tagname.</p>
+						<br>
+
+						<p class="fragment">Mantenha a especificidade dos seus seletores no mesmo nível usando classes sempre pra estilizar. São mais fáceis de compor.</p>
+						<br>
+
+						<p class="fragment">E jamais use !important pra forçar um estilo.</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Não brigue com a especificidade</h3>
+						<br>
+
+						<pre><code>
+&lt;div id="algum-id" class="alguma-classe">&lt/div>
+&lt;div id="algum-id">&lt/div>
+						</code></pre>
+						<pre><code>
+#algum-id { background-color: blue; }
+#algum-id.alguma-classe { background-color: red; }
+.alguma-classe { background-color: transparent; }
+#algum-id .alguma-classe { background-color: yellow; }
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Números mágicos são um mal sinal</h3>
+						<br>
+
+						<p>Toda vez que você escreve um <code>margin-top: 37px</code> ou um <code>width: 381px</code> um <a href="">bebê foca morre</a>.</p>
+
+						<p class="fragment">Quando você usa <code>margin-top: -1px</code> certamente vai quebrar em algum navegador ou se o ícone mudar. Isso faz seu CSS ser pouco ou quase nada reaproveitável.</p>
+
+						<p class="fragment">Quer alinhar um ícone com texto? Aprenda a usar o vertical-align:middle (mesmo ele não funcionando do jeito que você pensa que funciona).</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Use unidades flexíveis</h3>
+						<br>
+
+						<p>Números mágicos podem ser evitados em muitos casos usando unidades relativas como porcentagens.</p>
+						<br>
+
+						<p>Se você tem uma página de 940px de largura e precisa dividir em 5 colunas, não escreva <code>width: 188px</code> porque você nunca vai lembrar da onde saiu esse valor.</p>
+						<br>
+
+						<p>Prefira <code>width: 20%</code> que mostra de maneira mais óbvia que é 1/5 do página.</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Use unidades flexíveis</h3>
+						<br>
+
+						<p>E, claro, se puder, faça todas as suas unidades de layout com porcentagens.</p><br>
+
+						<p>A Web é uma mídia elástica e confinar sua página a pixels estáticos é transformar a Web em uma mídia limitada como a impressa.</p>
+						<br>
+
+						<p>Para elementos tipográficos ou afetados pela tipografia, use em como medida flexível.</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Evite acoplar o estilo a tags</h3>
+						<br>
+
+						<p>Escrever o nome tag no meio do CSS faz com que seu estilo fique acoplado à estrutura do HTML.
+							<br>Se o HTML muda, seu estilo quebra.</p><br>
+
+						<p>Se você tem um menu como uma lista cheia de itens, não use <code>.menu li</code> no CSS. <br> Prefira criar uma classe específica <code>.menu-item</code> e aplicá-la no HTML.</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Evite acoplar o estilo a tags</h3>
+						<br>
+
+						<p>Até quando você usa elementos mais padronizados, como <code>&lt;header></code> ou <code>&lt;h1></code>, a boa prática é usar classes pra estilizar</p>
+						<br>
+
+						<p>Tudo isso te deixa muito mais livre pra mudar o HTML por razões de semântica e conteúdo, sem afetar o estilo CSS.</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Dê bons nomes pra suas classes</h3>
+						<br>
+
+						<p>E já que boa parte das práticas envolve criar novas classes, a regra óbvia, criar nomes legíveis e fáceis de entender.
+							<br> Use <code>.painel-principal</code> ao invés de <code>.pnlPri</code>.</p>
+						<br>
+
+						<p class="fragment">Mas não é só isso. <br>Elas serão escritas no meio do conteúdo HTML da página e, portanto, devem ter semântica de conteúdo e não de visual.</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Dê bons nomes pra suas classes</h3>
+						<br>
+
+						<p>Evite <code>.box-lateral</code> ou <code>.titulo-azul</code> ou <code>.painel-direita</code>. Se o seu box não for lateral ou o título mudar de cor ou o painel mudar de lado, sua classe perde significado.</p>
+
+						<p>Prefira usar <code>.painel</code> ou <code>.chamada-principal</code>. E, claro, se, eventualmente, você tiver um <code>.titulo-azul</code> no seu código, não deixe a classe com esse nome o dia que a cor mudar pra vermelho; renomeie a classe!</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Documente bem as exceções</h3>
+						<br>
+
+						<p>Toda regra tem exceções. Às vezes, você vai colocar um ID ou tagname no seu CSS. Ou vai precisar de um !important num raro lugar. Ou aquele número mágico que você não vai lembrar depois como calcula.</p>
+
+						<p>Isso deve ser exceção, não abuse. E, sempre que fizer isso, documente direito no CSS o porquê daquela escolha.</p>
+
+						<pre><code>
+/* estrutura esperada para o menu:
+&lt;ul class="menu">
+	&lt;li>&lt;a href="">&lt;/a>
+	&lt;li>&lt;a href="">&lt;/a>
+&lt;/ul>
+*/
+.menu { ... }
+.menu li { ... }
+.menu a { ... }
+
+/* usando ID porque o widget do facebook obriga */
+#facebook-like iframe {
+	width: 100% !important; /* important pra sobrescrever css inline do widget */
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Indentação do código</h3>
+						<br>
+
+						<p>Código bem indentado facilita o entendimento e legibilidade, ajudando assim o desenvolvimento, mais principalmente a manutenção</p>
+						<br>
+
+						<p>Se tiver mais de uma pessoa mechendo no mesmo arquivo, padronize a identação dos editores, caso sejam diferentes</p>
+					</section>
+					<section>
+						<h4><a href="">CSS</a> / Boas Práticas</h4>
+
+						<h3>Ordem das declarações</h3>
+						<br>
+
+
+						<p>Não é obrigatório, mas se puder fazer é bom. Declarações relacionadas devem ser agrupadas segundo a seguinte ordem</p>
+						<br>
+
+						<ul>
+							<li>Posicionamento</li>
+							<li>Box model</li>
+							<li>Tipografia</li>
+							<li>Visual</li>
+						</ul>
+
+						<p>Posicionamento vem primeiro por que isto pode remover um elemento do fluxo normal do documento e substituir estilos relacionados. O box model vem depois pois ele dita as dimensões e lugar do componente.</p>
+
+						<p>Tudo o mais que toma lugar dentro do componente ou não impacta as duas seções anteriores, vem por último.</p>
+					</section>
+					<section>
+						<h3><a>CSS3</a></h3>
+
+						<h2>Vamos praticar!</h2>
+					</section>
+				</section>
+
 			</div>
 
 		</div>
