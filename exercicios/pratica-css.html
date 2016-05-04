@@ -3,13 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Prática de CSS</title>
+
+    <style>
+        body {
+            background-color: #333;
+            color: #cccccc;
+            font: 16px Arial, sans-serif;
+        }
+
+
+
+        .cabecalho {
+            width: 100%;
+            text-align: center;
+            /*font-size: 1rem;*/
+            background-color: blue;
+            float: left;
+        }
+
+        .cabecalho-subtitle {
+            font-size: 2em;
+        }
+
+        .cabecalho .menu {
+            float: left;
+        }
+
+        .menu-item-link {
+            color: yellow;
+        }
+
+        .menu-item:first-child .menu-item-link {
+            color: red;
+        }
+
+        .menu-item:nth-child(3) .menu-item-link {
+            color: green;
+        }
+    </style>
 </head>
 <body>
 
     <header class="cabecalho">
-        <h1 class="cabecalho-title">Testes de CSS</h1>
-        <h2 class="cabecalho-subtitle">Exercitando o que aprendemos no curso</h2>
-
         <nav class="menu">
             <ul class="menu-lista">
                 <li class="menu-item"><a href="" class="menu-item-link">Menu Item 01</a></li>
@@ -19,25 +54,78 @@
                 <li class="menu-item"><a href="" class="menu-item-link">Menu Item 05</a></li>
             </ul>
         </nav>
+
+        <h1 class="cabecalho-title">Testes de CSS</h1>
+        <h2 class="cabecalho-subtitle">Exercitando o que aprendemos no curso</h2>
+
+
     </header>
+
+
+    <style>
+
+        .galeria {
+            float: left;
+            width: 100%;
+        }
+
+        .galeria-item:first-child {
+            width: 66%;
+        }
+
+        .galeria-item {
+            float: left;
+            width: 33.33%;
+            padding: 0 1%;
+            box-sizing: border-box;
+            overflow: hidden;
+            height: 297px;
+            position: relative;
+        }
+
+        .galeria-item .texto {
+            position: absolute;
+            bottom: 0;
+            color: #000;
+
+        }
+
+        .galeria-item .texto p {
+            text-overflow: ellipsis;
+            width: 50%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .galeria-imagem {
+            width: 100%;
+        }
+
+    </style>
 
     <section class="galeria">
         <article class="galeria-item">
             <img src="http://msalx.veja.abril.com.br/2016/02/09/2122/mfRNb/alx_imagens-do-dia-20160209-018_original.jpeg?1455060151" alt="" class="galeria-imagem">
-            <h1>Título do item da galeria</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus egestas magna quis sodales. Etiam magna nulla, lobortis at faucibus et, egestas vestibulum diam.</p>
+            <div class="texto">
+                <h1>Título do item da galeria</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus egestas magna quis sodales. Etiam magna nulla, lobortis at faucibus et, egestas vestibulum diam.</p>
+            </div>
         </article>
 
         <article class="galeria-item">
             <img src="http://msalx.veja.abril.com.br/2016/02/09/2122/mfRNb/alx_imagens-do-dia-20160209-018_original.jpeg?1455060151" alt="" class="galeria-imagem">
-            <h1>Título do item da galeria</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus egestas magna quis sodales. Etiam magna nulla, lobortis at faucibus et, egestas vestibulum diam.</p>
+            <div class="texto">
+                <h1>Título do item da galeria</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus egestas magna quis sodales. Etiam magna nulla, lobortis at faucibus et, egestas vestibulum diam.</p>
+            </div>
         </article>
 
         <article class="galeria-item">
             <img src="http://msalx.veja.abril.com.br/2016/02/09/2122/mfRNb/alx_imagens-do-dia-20160209-018_original.jpeg?1455060151" alt="" class="galeria-imagem">
-            <h1>Título do item da galeria</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus egestas magna quis sodales. Etiam magna nulla, lobortis at faucibus et, egestas vestibulum diam.</p>
+            <div class="texto">
+                <h1>Título do item da galeria</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus egestas magna quis sodales. Etiam magna nulla, lobortis at faucibus et, egestas vestibulum diam.</p>
+            </div>
         </article>
 
         <article class="galeria-item">
@@ -53,11 +141,40 @@
         </article>
     </section>
 
+    <style>
+
+        .conteudo {
+            padding: 0 15%;
+            margin: auto;
+            clear: both;
+            position: relative;
+
+
+        }
+
+        .conteudo .texto {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15%;
+        }
+
+        .conteudo aside {
+            width: 15%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+    </style>
+
     <article class="conteudo">
         <header class="conteudo-cabecalho">
             <h1 class="conteudo-title">Titulo do conteúdo principal</h1>
-            <p class="conteudo-data">Postado em 10/10/1010</p>
-            <p class="autor">Nome do autor desse conteúdo - <a href="">Link para o perfil</a></p>
+            <div class="texto">
+                <p class="conteudo-data">Postado em 10/10/1010</p>
+                <p class="autor">Nome do autor desse conteúdo - <a href="">Link para o perfil</a></p>
+            </div>
         </header>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque lorem a nunc aliquam rhoncus. Maecenas ultrices, tortor vitae pretium hendrerit, velit libero luctus diam, et malesuada lorem nisi ac elit. Sed eget vestibulum risus, non dignissim nibh. Vestibulum eu vehicula arcu, nec malesuada diam. Cras ultrices vel ex ac tempus. Nam vitae metus pulvinar, dignissim sem lobortis, rutrum tellus. Sed eleifend nunc at pharetra faucibus. Maecenas tincidunt ex tincidunt eros ullamcorper, sit amet molestie ipsum mollis. Sed aliquet purus id nisi venenatis interdum. Mauris erat ipsum, ultricies sed neque in, bibendum ultrices quam.</p>
