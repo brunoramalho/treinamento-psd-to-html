@@ -826,6 +826,297 @@ body {
 					</section>
 				</section>
 
+				<!-- DIA 11 -->
+				<section>
+					<h3>Treinamento</h3>
+					<h2><a>Corte e Montagem <br>de HTML/CSS</a></h2>
+					<p>Do PSD ao HTML5</p>
+					<br>
+					<p>Photoshop, Fireworks, HTML5, Bootstrap</a>, <br>Fonticons, CSS, <a href="">SASS</a>, Gulp e
+						Bower</p>
+				</section>
+				<section>
+					<section>
+						<h3><a href="">SASS</a></h3>
+						<br>
+						<p>Pré-processador de CSS.</p>
+						<br>
+						<p class="fragment fade"><a href="">Utilizado para dar mais poder e flexibilidade ao seu CSS</a></p>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>O que é?</h3>
+						<br>
+						<p class="fragment">Sass permite usar recursos que não existem em CSS, como variáveis, aninhamento, mixins(funções), herança e outras guloseimas.</p>
+						<br>
+						<p class="fragment">Depende de um compilador para entregar um CSS.</p>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Variáveis</h3>
+						<br>
+						<p class="fragment">Uma maneira de armazenar informações que você deseja reutilizar.</p>
+						<p class="fragment">Cores, Fonte, Dimensões, sombras ou qualquer valor CSS você acha que vai querer reutilizar.</p>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Variáveis</h3>
+						<br>
+						<pre class="fragment"><code contenteditable="true">
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+	font: 100% $font-stack;
+	color: $primary-color;
+}
+						</code></pre>
+						<pre class="fragment"><code contenteditable="true">
+body {
+	font: 100% Helvetica, sans-serif;
+	color: #333;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Aninhamento</h3>
+						<br>
+						<p class="fragment">O CSS não permite aninhar regras.</p>
+						<p class="fragment">No SASS podemos aninhar as regras criando assim uma melhor organização.</p>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Aninhamento</h3>
+						<br>
+						<pre class="fragment"><code contenteditable="true">
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		display: block;
+		padding: 6px 12px;
+		text-decoration: none;
+	}
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Aninhamento</h3>
+						<br>
+						<pre class="fragment"><code contenteditable="true">
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	padding: 6px 12px;
+	text-decoration: none;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Fragmentos / Import</h3>
+						<br>
+						<p class="fragment">No SASS também podemos fragmentar nossos arquivos, separando por
+							funcionalidade e/ou páginas.</p>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Fragmentos / Import</h3>
+						<br>
+						<pre><code contenteditable="true">
+// _reset.scss
+html,
+body,
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+						</code></pre>
+						<pre class="fragment"><code contenteditable="true">
+// base.scss
+@import 'reset';
+body {
+	font: 100% Helvetica, sans-serif;
+	background-color: #efefef;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Fragmentos / Import</h3>
+						<br>
+						<pre><code contenteditable="true">
+html, body, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 100% Helvetica, sans-serif;
+	background-color: #efefef;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Extend / Estender regras</h3>
+						<br>
+						<p>Você pode aplicar uma regra diversas vezes em vários lugares diferentes.</p>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Extend / Estender regras</h3>
+						<br>
+						<pre><code contenteditable="true">
+.message {
+	border: 1px solid #ccc;
+	padding: 10px;
+	color: #333;
+}
+
+.success {
+	@extend .message;
+	border-color: green;
+}
+
+.error {
+	@extend .message;
+	border-color: red;
+}
+
+.warning {
+	@extend .message;
+	border-color: yellow;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Extend / Estender regras</h3>
+						<br>
+						<pre><code contenteditable="true">
+.message, .success, .error, .warning {
+	border: 1px solid #cccccc;
+	padding: 10px;
+	color: #333;
+}
+
+.success {
+	border-color: green;
+}
+
+.error {
+	border-color: red;
+}
+
+.warning {
+	border-color: yellow;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Mixins / Funções</h3>
+						<br>
+						<p>Semelhante ao Extend, você pode incorporar um código dentro de outro, só que passando
+							valores variáveis.</p>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Mixins / Funções</h3>
+						<br>
+						<pre><code contenteditable="true">
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+		    border-radius: $radius;
+}
+
+.box {
+	@include border-radius(10px);
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Mixins / Funções</h3>
+						<br>
+						<pre><code contenteditable="true">
+.box {
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	    -ms-border-radius: 10px;
+	        border-radius: 10px;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Operadores</h3>
+						<br>
+						<p>Você também pode trabalhar com operações matemáticas, no SASS.</p>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Operadores</h3>
+						<br>
+						<pre><code contenteditable="true">
+.container { width: 100%; }
+
+article[role="main"] {
+	float: left;
+	width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+	float: right;
+	width: 300px / 960px * 100%;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h4><a href="">SASS</a></h4>
+						<h3>Operadores</h3>
+						<br>
+						<pre><code contenteditable="true">
+.container {
+	width: 100%;
+}
+
+article[role="main"] {
+	float: left;
+	width: 62.5%;
+}
+
+aside[role="complementary"] {
+	float: right;
+	width: 31.25%;
+}
+						</code></pre>
+					</section>
+				</section>
+
 			</div>
 
 		</div>
